@@ -11,9 +11,7 @@ export default function EditPost() {
 
 	useEffect(() => {
 		if (slugParam && slugParam !== "new") {
-			fetch(
-				`https://blog-viewer-react-backend.onrender.com/api/posts/${slugParam}`
-			)
+			fetch(`http://localhost:3000/api/posts/${slugParam}`)
 				.then((res) => res.text())
 				.then(setContent)
 				.catch(() => setContent("# 404 - Post not found"));
@@ -27,7 +25,7 @@ export default function EditPost() {
 			alert("Slug cannot be empty");
 			return;
 		}
-		fetch("https://blog-viewer-react-backend.onrender.com/api/save-post", {
+		fetch("http://localhost:3000/api/save-post", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ slug, content }),

@@ -4,7 +4,9 @@ import PostLinks from "../components/PostLinks";
 
 const posts = [
 	{ slug: "firstBlog", title: "Welcome to My Blog" },
-	{ slug: "second-post", title: "Second Post" },
+	{ slug: "second-post", title: "Second Post[Deleted]" },
+	{ slug: "test", title: "Test blog" },
+	{ slug: "fourthSlug", title: "Fourth Post" },
 ];
 
 export default function Blog() {

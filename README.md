@@ -3,8 +3,10 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-[![Frontend](https://img.shields.io/badge/Frontend-Repo-orange)](https://github.com/Kofi100/blog-viewer-react)
-[![Backend](https://img.shields.io/badge/Backend-Repo-yellow)](https://github.com/Kofi100/blog_viewer_react_backend)
+
+<!-- [![Frontend](https://img.shields.io/badge/Frontend-Repo-orange)](https://github.com/Kofi100/blog-viewer-react)
+[![Backend](https://img.shields.io/badge/Backend-Repo-yellow)](https://github.com/Kofi100/blog_viewer_react_backend) -->
+
 [![Live Demo](https://img.shields.io/badge/Demo-Live-success)](https://your-live-demo-link)
 
 ## Description
@@ -26,12 +28,12 @@ Clone the repos and install dependencies:
 # Frontend
 cd https://github.com/Kofi100/blog-viewer-react
 npm install
-npm start
 
-# Backend
-cd https://github.com/Kofi100/blog_viewer_react_backend
-npm install
-npm start
+cd react
+npm run dev
+
+cd backend
+nodemon index.js
 ```
 
 ## Usage
