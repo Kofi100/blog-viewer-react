@@ -10,7 +10,7 @@ export default function Post() {
 	const [content, setContent] = useState("");
 
 	useEffect(() => {
-		fetch(`http://localhost:3000/api/posts/${slug}`)
+		fetch(`https://blog-viewer-react-backend.onrender.com/api/posts/${slug}`)
 			.then((res) => res.text())
 			.then(setContent)
 			.catch(() => setContent("# 404 - Post not found"));
