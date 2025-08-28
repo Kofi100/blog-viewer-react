@@ -1,11 +1,16 @@
 {
-  "dependencies": {
-    "concurrent": "^0.3.2",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "formidable": "^3.5.4",
-    "nodemon": "^3.1.10",
-    "remark-emoji": "^5.0.1",
-    "spoonacular": "^2.0.2"
-  }
+	"dependencies": {
+		"concurrent": "^0.3.2",
+		"cors": "^2.8.5",
+		"express": "^5.1.0",
+		"formidable": "^3.5.4",
+		"nodemon": "^3.1.10",
+		"remark-emoji": "^5.0.1",
+		"spoonacular": "^2.0.2"
+	},
+	"scripts": {
+		"client": "cd react && npm run dev",
+		"server": "cd backend && nodemon index.js",
+		"program": "concurrently -c \"red,green\" \"npm run server\" \"npm run client\""
+	}
 }

@@ -22,7 +22,9 @@ export default function Blog() {
 			<p>
 				All posts are written in Markdown and stored as .md files on the server.
 			</p>
-			<Link to="/edit/new">Create New Post</Link>
+			<Link to="/edit/new">
+				<p className="text-center">Create New Post</p>
+			</Link>
 			<PostLinks postDictionary={posts} />
 		</section>
 	);
