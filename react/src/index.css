@@ -29,9 +29,10 @@ a:hover {
 body {
 	margin: 0;
 	display: flex;
-	place-items: center;
-	min-width: 320px;
-	min-height: 100vh;
+	min-height: 98vh; /**to make border visible**/
+	border-color: #1a1a1a;
+	border-width: 0.5rem;
+	border-style: dashed;
 }
 
 h1 {

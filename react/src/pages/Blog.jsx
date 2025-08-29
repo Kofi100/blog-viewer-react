@@ -1,6 +1,7 @@
 // src/pages/Blog.jsx
 import { Link } from "react-router-dom";
 import PostLinks from "../components/PostLinks";
+import { Fragment } from "react";
 
 const posts = [
 	{ slug: "firstBlog", title: "Welcome to My Blog" },
@@ -22,10 +23,23 @@ export default function Blog() {
 			<p>
 				All posts are written in Markdown and stored as .md files on the server.
 			</p>
-			<Link to="/edit/new">
-				<p className="text-center">Create New Post</p>
-			</Link>
-			<PostLinks postDictionary={posts} />
+			<div className="flex flex-row min-h-[38rem]">
+				<section className="flex flex-col w-[50%]">
+					<Link to="/edit/new">
+						<p className="">Create New Post</p>
+					</Link>
+
+					<PostLinks
+						postDictionary={posts}
+						className="pl-0"
+						// style={{ paddingLeft: 0 }}
+						//mdn width;
+					/>
+				</section>
+				<section className="flex flex-col w-[50%]">
+					<p>Hello!</p>
+				</section>
+			</div>
 		</section>
 	);
 }
