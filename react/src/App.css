@@ -1,5 +1,5 @@
-@tailwind base;
-@tailwind components;
+/* @import "tailwindcss/preflight"; */
+
 @tailwind utilities;
 
 #root {
@@ -45,8 +45,8 @@
 	color: #888;
 }
 
-.book {
+/* .book {
 	box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
 	background: #fefcf7;
 	border: 1px solid #ddd;
-}
+} */

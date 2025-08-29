@@ -36,7 +36,7 @@ export default function EditPost() {
 	};
 
 	return (
-		<div className="text-start" style={{ padding: "1.5rem" }}>
+		<div className="text-start book-line-bg" style={{ padding: "1.5rem" }}>
 			<h1>{slugParam ? `Edit Post: ${slugParam}.md` : "Create New Post"}</h1>
 			<p>
 				{slugParam
@@ -50,6 +50,7 @@ export default function EditPost() {
 					name="name"
 					id="name"
 					placeholder="Slug Name"
+					className="bg-white border-black border-2 p-2.5 rounded-2xl"
 					value={slug}
 					onChange={(e) => setSlug(e.target.value)}
 				/>
@@ -60,18 +61,24 @@ export default function EditPost() {
 					cols="100"
 					rows="30"
 					value={content}
+					className="bg-white border-black border-2 p-2.5 rounded-2xl"
 					onChange={(e) => {
 						setContent(e.target.value);
 					}}
 				></textarea>
 			</div>
 			<h2>Preview of Post</h2>
-			<section className="flex flex-col rounded-lg border-2 border-white border-dashed min-h-[500px] min-w-[500px]">
+			<section className="flex flex-col rounded-lg border-2 p-2.5  border-dashed min-h-[500px] min-w-[500px]">
 				<ReactMarkdown remarkPlugins={[remarkGfm, remarkEmoji]}>
 					{content}
 				</ReactMarkdown>
 			</section>
-			<input type="submit" value="Save Progress" onClick={handleSave} />
+			<input
+				type="submit"
+				value="Save Progress"
+				onClick={handleSave}
+				className="underline hover:text-blue-800"
+			/>
 		</div>
 	);
 }

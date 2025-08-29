@@ -23,9 +23,9 @@ export default function Blog() {
 		// 	<Route path="/edit/:slug" element={<EditPost />} />
 		// </Routes>
 		<div className="flex flex-row min-h-[100vh] font-body">
-			<section className="flex flex-col min-w-[50%] ">
+			<section className="flex flex-col min-w-[50%] book-line-bg ">
 				<section>
-					<h1>Blog</h1>
+					<h1 className="font-heading">Blog</h1>
 					<h2>Hello!</h2>
 					<p>This is a blog website I'm working on.</p>
 					<p>
@@ -50,7 +50,7 @@ export default function Blog() {
 				</section>
 			</section>
 			<section
-				className="flex flex-col min-w-[50%] "
+				className="flex flex-col min-w-[50%]  "
 				style={{ perspective: 1200, backfaceVisibility: "hidden" }}
 			>
 				<AnimatePresence mode="wait" initial={false}>
