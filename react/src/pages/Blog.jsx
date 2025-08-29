@@ -38,7 +38,7 @@ export default function Blog() {
 					</p>
 
 					<Link to="/edit/new">
-						<p className="">Create New Post</p>
+						<p className="underline hover:text-blue-800">Create New Post</p>
 					</Link>
 
 					<PostLinks
