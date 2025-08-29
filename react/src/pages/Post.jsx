@@ -17,7 +17,10 @@ export default function Post() {
 	}, [slug]);
 
 	return (
-		<article>
+		<article
+			className="pl-5 pr-5 min-h-[100vh]"
+			style={{ paddingLeft: "1.5rem", paddingRight: "1.5rem" }}
+		>
 			<ReactMarkdown remarkPlugins={[remarkGfm, remarkEmoji]}>
 				{content}
 			</ReactMarkdown>

@@ -36,7 +36,7 @@ export default function EditPost() {
 	};
 
 	return (
-		<div className="text-start">
+		<div className="text-start" style={{ padding: "1.5rem" }}>
 			<h1>{slugParam ? `Edit Post: ${slugParam}.md` : "Create New Post"}</h1>
 			<p>
 				{slugParam
