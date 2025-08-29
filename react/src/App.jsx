@@ -17,10 +17,11 @@ function App() {
 		<div>
 			<Router>
 				<Routes>
-					<Route path="/" element={<Home />} />
+					<Route path="/*" element={<Home />} />
+					{/* adding an asterisk enables nested routing in the component without going to the main app */}
 					{/* link ends up here */}
-					<Route path="/post/:slug" element={<Post />} />
-					<Route path="/edit/:slug" element={<EditPost />} />
+					{/* <Route path="/post/:slug" element={<Post />} />
+					<Route path="/edit/:slug" element={<EditPost />} /> */}
 				</Routes>
 			</Router>
 		</div>
