@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				body: ["EB Garamond ", "serif"],
+				body: ["EB Garamond", "serif"],
 				heading: ["Merriweather", "serif"],
 			},
 		},
