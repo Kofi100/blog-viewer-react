@@ -102,6 +102,8 @@ button:focus-visible {
 	background: rgba(0, 0, 0, 0.1);
 }
 .book *:where(h1, h2, h3, h4, h5, p, div, section, article, li) {
+	/* would affect all child elements in .book group here   */
+	/* adding ">" b/n .book and *:where would make it affect only DIRECT child elements*/
 	/* *:not(:last-child) */
 	border-bottom: 1px solid black; /* line */
 	min-height: 2rem; /* ensures minimum height */

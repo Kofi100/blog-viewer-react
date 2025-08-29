@@ -22,7 +22,7 @@ export default function Blog() {
 		// 	<Route path="/post/:slug" element={<Post />} />
 		// 	<Route path="/edit/:slug" element={<EditPost />} />
 		// </Routes>
-		<div className="flex flex-row min-h-[100vh] font-body">
+		<div className="flex flex-row font-body">
 			<section className="flex flex-col min-w-[50%] book-line-bg ">
 				<section>
 					<h1 className="font-heading">Blog</h1>
